@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>BoxModel</title>
+    <style>
+    /*input [type="submit"]{
+        background-color: red;
+    }
+    input [type="password"]{
+        background-color: blue;
+    }
+    */
+    input [required="required"]{
+        background-color: red;
+    }
+    input{
+        border : 1px solid yellow;
+    }
+    .box{
+        background-color: green;
+        display: block;
+        height: 100px;
+        border: 1px solid black;
+    }
+    /*.box:last-child{
+        background-color: pink;
+    }*/
+    .container > .box{
+        background-color: yellow;
+    }
+    .child{
+        background-color: purple;
+        width: 40px;
+    }
+    </style>
+  </head>
+  <body>
+    <dif class="container">
+        <div class="box">
+            <div class="box child"></div>
+        </div>
+        <div class="box"></div>
+        <div class="box">
+        <input type="password" required="required" />
+        <input type="submit" class ="submit" />
+        </div>
+    </div>
+  </body>
+</html>

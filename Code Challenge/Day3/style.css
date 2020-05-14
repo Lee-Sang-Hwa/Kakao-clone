@@ -1,0 +1,58 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 1500px;
+  font-size: 0;
+  line-height: 0;
+}
+
+#boxTop {
+  height: 100px;
+  width: 1858px;
+  background-color: #ff7979;
+  position: fixed;
+  z-index: 2;
+}
+
+#boxBot {
+  display: inline-block;
+  padding-top: 50px;
+  padding-left: 50px;
+  vertical-align: top;
+  margin-top: 100px;
+}
+
+.Left {
+  height: 800px;
+  width: 1200px;
+  background-color: #7ed6df;
+}
+
+.Right {
+  height: 780px;
+  width: 500px;
+  background-color: #ffcc00;
+  border: 10px solid grey;
+  position: relative;
+  padding-right: 38px;
+}
+
+#boxCenter {
+  height: 100px;
+  width: 200px;
+  background-color: #badc58;
+  position: absolute;
+  top: -50px;
+  left: -100px;
+  z-index: 2;
+}
+
+h1 {
+  font-size: 100px;
+  color: white;
+}
