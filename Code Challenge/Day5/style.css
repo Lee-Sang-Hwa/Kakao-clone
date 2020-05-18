@@ -1,0 +1,37 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+}
+.boxbut {
+  height: 100px;
+  width: 450px;
+  border-radius: 100px;
+  background-color: #7f8c8d;
+}
+.boxbut:hover {
+  background-color: #95a6a5;
+  box-shadow: 5px 5px 5px 1px grey;
+}
+.boxbut:hover ~ img {
+  transition: transform 0.5s ease-in-out;
+  transform: rotate(135deg) scale(0.8, 0.8);
+  border: 10px solid black;
+}
+img {
+  width: 500px;
+  height: 500px;
+}
+p {
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  height: 60px;
+  margin: 15px 0px;
+}

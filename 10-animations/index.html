@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Animations</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        background: red;
+        animation: 1.5s ScaleAndRotateSquare infinite;
+      }
+      @keyframes ScaleAndRotateSquare {
+        from {
+          transform: none;
+        }
+        to {
+          transform: rotate(1turn) scale(0.5, 0.5);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>
