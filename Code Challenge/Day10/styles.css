@@ -1,0 +1,105 @@
+@import "reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f8f7ff;
+  font-family: "Balsamiq Sans", cursive;
+}
+.signin {
+  height: 800px;
+  margin: 20px 20px;
+  padding: 30px 30px;
+  background-color: #f5f6f7;
+  box-shadow: 5px 5px 5px 1px grey;
+  border-radius: 30px;
+}
+
+.signin__title {
+  font-weight: 700;
+  text-align: center;
+  font-size: 30px;
+  margin: 30px 0px 50px 0px;
+}
+
+.signin__email,
+.signin__password {
+  height: 40px;
+  width: 400px;
+  margin: 10px 0px;
+  font-size: 15px;
+  border-radius: 5px;
+  border: none;
+  font-family: "Balsamiq Sans", cursive;
+  opacity: 0.6;
+  padding-left: 10px;
+}
+
+.signin__password-fg {
+  color: red;
+  text-align: right;
+  margin: 30px 0px;
+  cursor: pointer;
+}
+.signin__store {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.signin__btn {
+  background-color: red;
+  height: 50px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0px;
+  cursor: pointer;
+}
+
+.signin__btn-signin {
+  color: white;
+  font-weight: 700;
+}
+
+.signin__others {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signin__btn-facebook,
+.signin__btn-twitter {
+  height: 50px;
+  width: 180px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 700;
+  margin: 30px 12px;
+  cursor: pointer;
+}
+
+.signin__btn-facebook {
+  background-color: #475a95;
+}
+.signin__btn-twitter {
+  background-color: #5da1f2;
+}
+.signin__detail-column {
+  margin: 20px 0px;
+}
+.signin__detail-signup,
+.signin__detail-retrive {
+  color: red;
+  cursor: pointer;
+}
+.signin__detail-detail {
+  opacity: 0.6;
+  margin-right: 10px;
+}
