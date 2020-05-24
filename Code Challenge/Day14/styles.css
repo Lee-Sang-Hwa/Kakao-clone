@@ -1,0 +1,154 @@
+@import "reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  font-family: "Noto Sans KR", sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.anim__youtube,
+.anim__gmail,
+.anim__photo {
+  width: 500px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.anim-1,
+.anim-2,
+.anim-3 {
+  margin: 50px 0px;
+}
+.anim__newwindow,
+.anim__btmbar,
+.anim__resize {
+  background-color: black;
+}
+.anim__icon-icon {
+  width: 150px;
+  height: 150px;
+}
+.anim__detail-title {
+  color: white;
+  font-weight: 800;
+  margin: 10px 0px;
+}
+.anim__detail-author {
+  color: red;
+  font-weight: 400;
+}
+.anim__detail-btn-btn {
+  text-align: center;
+  background-color: red;
+  color: white;
+  font-weight: 600;
+  padding: 10px 10px;
+}
+.anim__detail-column-left {
+  margin-bottom: 30px;
+}
+.anim__detail-column-right {
+  margin-top: 30px;
+}
+
+/* 1st animation */
+.anim-1 {
+  position: relative;
+}
+.anim__youtube {
+  background-color: #ffe16b;
+}
+.anim__newwindow {
+  position: absolute;
+  text-align: center;
+  width: 500px;
+  height: 400px;
+  padding: 30px 30px;
+  top: 0;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+}
+.anim__newwindow .anim__detail {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 20px;
+}
+
+.anim__newwindow .anim__detail-column-right {
+  margin-top: 50px;
+}
+.anim__newwindow:hover {
+  opacity: 1;
+  transform: translateX(15px) translateY(15px);
+}
+
+/* 2nd animation */
+.anim-2 {
+  overflow: hidden;
+  position: relative;
+}
+.anim__gmail {
+  background-color: #f8a3a1;
+  transition: all 0.3s ease-in-out;
+}
+.anim__btmbar {
+  position: absolute;
+  width: 500px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+.anim__btmbar .anim__detail {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 20px;
+}
+.anim-2:hover .anim__gmail {
+  transform: translateY(-50px);
+}
+.anim-2:hover .anim__btmbar {
+  transform: translateY(-150px);
+}
+
+/* 3rd animation */
+.anim3 {
+  position: relative;
+}
+.anim__photo {
+  background-color: #d6f0f9;
+}
+.anim__resize {
+  width: 500px;
+  height: 400px;
+  display: flex;
+  align-items: flex-end;
+}
+.anim__resize .anim__detail {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 20px;
+}
+.anim__photo {
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+  transform-origin: 50% 30%;
+}
+.anim__photo:hover {
+  transform: scale(0.5, 0.5);
+}
